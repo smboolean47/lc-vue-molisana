@@ -17,8 +17,8 @@ export default {
 <style lang="scss" scoped>
     .product {
         background-color: #fff;
-        width: calc(25% - 10px);
-        margin: 5px;
+        // width: calc(25% - 10px);
+        // margin: 5px;
         padding: 20px 15px;
 
         img {
