@@ -23,6 +23,12 @@ section {
 .container {
     margin: 0 auto;
     max-width: 1200px;
+
+    // .container-small
+    &-small {
+        @extend .container;
+        max-width: 800px;
+    }
 }
 
 /*-----------------------
@@ -32,6 +38,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h2 {
+h2, h3 {
     color: $mainColor;
 }

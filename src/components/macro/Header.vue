@@ -1,9 +1,7 @@
 <template>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="../assets/img/la-molisana-logo.png" alt="Logo">
-            </div>
+            <Logo alt-text="Logo Header con Scipolla"/>
             <nav>
                 <ul>
                     <!-- <li><a href="#">Home</a></li>
@@ -18,8 +16,13 @@
 </template>
 
 <script>
+import Logo from '../commons/Logo.vue';
+
 export default {
     name: 'Header',
+    components: {
+        Logo
+    },
     data() {
         return {
             // dati del componente
@@ -51,7 +54,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/partials/variables.scss';
+@import '../../assets/style/partials/variables.scss';
 
     header {
         text-align: center;
